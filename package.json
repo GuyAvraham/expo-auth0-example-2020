@@ -1,0 +1,21 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@auth0/auth0-spa-js": "^1.6.3",
+    "expo": "^36.0.2",
+    "expo-constants": "~8.0.0",
+    "jwt-decode": "^2.2.0",
+    "react": "16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.1.tar.gz"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^8.0.0"
+  },
+  "private": true
+}
