@@ -1,5 +1,5 @@
 # auth0-example
-Credits to @brentvatne for creating the original version two years ago.
+Credits to https://github.com/expo/auth0-example for creating the original repo two years ago. It is currently not maintained and cannot be upgraded to new Expo versions.
 
 ## Setup
 * Create your own application client on [Auth0](https://auth0.com).
@@ -27,6 +27,6 @@ yarn install
 yarn start
 ```
 
-Make sure to replace the `auth0ClientId` and `auth0Domain` values with the ones from your Auth0 application.
+Make sure to replace the `auth0ClientId` and `auth0Domain` values with the ones from your Auth0 application (app.json).
 
 ![Application Settings](images/image-1.jpeg)
