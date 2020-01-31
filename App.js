@@ -9,6 +9,7 @@ import Main from "./pages/Main";
 import createAuth0Client from "@auth0/auth0-spa-js";
 
 const { auth0ClientId, auth0Domain } = Constants.manifest.extra;
+const nosercertstest = 'ef278182t7439h24ib4';
 
 /**
  * Converts an object to a query string.
