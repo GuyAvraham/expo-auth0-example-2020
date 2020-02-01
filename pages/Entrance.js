@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Button, StyleSheet, View, Image, Text } from "react-native";
+import React from "react";
+import { StyleSheet, View, Image, Text } from "react-native";
 import MaterialButtonDark from "../components/MaterialButtonDark";
 
-function Untitled(props) {
+function Entrance(props) {
   return (
     <View style={styles.container}>
       <Image
@@ -11,7 +11,7 @@ function Untitled(props) {
         style={styles.image}
       ></Image>
       <MaterialButtonDark
-        text1="כניסה למערכת"
+        text1="Login"
         style={styles.materialButtonDark}
         onPress={() => {
           console.log('click');
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Untitled;
+export default Entrance;

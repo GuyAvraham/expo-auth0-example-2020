@@ -24,10 +24,6 @@
     ],
     "ios": {
       "supportsTablet": true
-    },
-    "extra": {
-      "auth0ClientId": "****",
-      "auth0Domain": "https://dev-***.eu.auth0.com"
     }
   }
 }

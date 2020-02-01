@@ -12,9 +12,35 @@ Credits to https://github.com/expo/auth0-example for creating the original repo 
 
   You can get the full redirect URL by simply logging `AuthSession.getRedirectUrl()` in your own codebase.
 
-## Example
-Feel free to run the example and test it yourself, and read through [App.js](App.js) to better understand how it works.
+## Managing Secrets Expo Auth0
+Create a env.js file on the ./config directory, with `auth0ClientId` and `auth0Domain` values from your Auth0 application. 
 
+(env.js is already on the .gitignore file)
+
+![Application Settings](images/image-1.jpeg)
+
+#./config/env.js 
+```
+const ENV = {
+  dev: {
+    apiUrl: localhost,
+    auth0ClientId: '*****',
+    auth0Domain: '*****',
+  },
+  staging: {
+    apiUrl: "[your.staging.api.here]",
+  },
+  prod: {
+    apiUrl: "[your.production.api.here]",
+  }
+};
+
+export default ENV;
+```
+
+________________________
+
+# Install & Run
 If you are using NPM:
 ```
 npm install
@@ -27,6 +53,10 @@ yarn install
 yarn start
 ```
 
-Make sure to replace the `auth0ClientId` and `auth0Domain` values with the ones from your Auth0 application (app.json).
 
-![Application Settings](images/image-1.jpeg)
+
+# Expo
+expo build:ios --release-channel staging
+expo build:android --release-channel staging
+expo publish --release-channel staging
+
