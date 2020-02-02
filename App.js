@@ -4,7 +4,7 @@ import { StyleSheet, View} from "react-native";
 import Entrance from "./pages/Entrance";
 import Main from "./pages/Main";
 import createAuth0Client from "@auth0/auth0-spa-js";
-import Auth from "./utils/auth0/auth";
+import Auth from "./utils/auth/auth";
 
 export default class App extends React.Component {
   state = {
