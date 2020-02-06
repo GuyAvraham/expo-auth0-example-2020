@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Image, Text } from "react-native";
 import MaterialButtonDark from "../components/MaterialButtonDark";
+import { translated } from "../utils/localization";
 
 function Entrance(props) {
   return (
@@ -11,10 +12,10 @@ function Entrance(props) {
         style={styles.image}
       ></Image>
       <MaterialButtonDark
-        text1="Login"
+        text1={translated("Enter")}
         style={styles.materialButtonDark}
         onPress={() => {
-          console.log('click');
+          console.log("click");
           props.onLogin();
         }}
       ></MaterialButtonDark>

@@ -29,8 +29,11 @@ const login = async () => {
   const queryParams = toQueryString({
     client_id: auth0ClientId,
     redirect_uri: redirectUrl,
-    response_type: "id_token", // id_token will return a JWT token
-    scope: "openid profile user_metadata", // retrieve the user's profile
+    // response_type:
+    // id_token will return a JWT token with the profile as described on the scope
+    // token will return access_token to use with further api calls
+    response_type: "token id_token",
+    scope: "openid profile user_metadata",
     nonce: "nonce" // ideally, this will be a random value
   });
 
@@ -54,18 +57,12 @@ const handleLoginResponse = response => {
     return;
   }
 
-  // Retrieve the JWT token and decode it
-  console.log(response, "response");
-  console.log(response.user_metadata, "metadata");
-  // console.log(jwtDecode(response.user_metadata), 'decoded **')
+  // const decodedAccessToken = jwtDecode(response.access_token);
+  // console.log(decodedAccessToken, 'decodedAccessToken ***')
 
-  const jwtToken = response.id_token;
-  const decoded = jwtDecode(jwtToken);
-
-  console.log(decoded, "decoded id_token ***");
-  const { name } = decoded;
-
-  return name;
+  const decodedJwtIdToken = jwtDecode(response.id_token);
+  console.log(decodedJwtIdToken, "decodedJwtIdToken ***");
+  return decodedJwtIdToken['https://crm.kb.com/name'];
 };
 
 export default { login, logout };
