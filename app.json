@@ -25,9 +25,12 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "LSApplicationQueriesSchemes": ["m.me"]
+        "LSApplicationQueriesSchemes": [
+          "m.me"
+        ]
       }
     },
-    "scheme": "kbp"
+    "scheme": "kbp",
+    "description": ""
   }
 }

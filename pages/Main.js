@@ -1,16 +1,45 @@
-import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import React, { useState } from "react";
+import {
+  StyleSheet,
+  View,
+  Text,
+  Modal,
+  TouchableHighlight
+} from "react-native";
 import MaterialButtonViolet from "../components/MaterialButtonViolet";
 import Anchor from "../components/anchor";
 import BrowserModal from "../components/browserModal";
 import { translated } from "../utils/localization";
+import Personal from "./personal";
 
 function Main(props) {
+  const [modalVisible, setModalVisible] = useState(true);
+
   console.log("render");
   return (
     <View style={styles.container}>
-      <Text style={styles.loremIpsum}>{props.name}, {translated("Welcome")}</Text>
-      <Anchor text={translated("Chat")} style={styles.chat} href="http://m.me/kbpuretest" />
+      <Modal animationType="slide" transparent={false} visible={modalVisible}>
+        <View style={styles.loremIpsum}>
+          <Personal user={props.user} />
+
+          <MaterialButtonViolet
+            text1={translated("HideModal")}
+            style={styles.logout}
+            onPress={() => {
+              setModalVisible(!modalVisible);
+            }}
+          />
+        </View>
+      </Modal>
+
+      <Text style={styles.loremIpsum}>
+        {props.name}, {translated("Welcome")}
+      </Text>
+      <Anchor
+        text={translated("Chat")}
+        style={styles.chat}
+        href="http://m.me/kbpuretest"
+      />
       <BrowserModal
         text={translated("Shop")}
         style={styles.shop}
@@ -32,7 +61,8 @@ function Main(props) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    alignSelf: "center"
   },
   loremIpsum: {
     color: "#121212",

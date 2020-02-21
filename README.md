@@ -13,15 +13,15 @@ Credits to https://github.com/expo/auth0-example for creating the original repo 
   You can get the full redirect URL by simply logging `AuthSession.getRedirectUrl()` in your own codebase.
 
 ## Managing Secrets Expo Auth0
-Create a env.js file on the ./config directory, with `auth0ClientId` and `auth0Domain` values from your Auth0 application. 
+Create a env.ts file on the ./config directory, with `auth0ClientId` and `auth0Domain` values from your Auth0 application. 
 
-(env.js is already on the .gitignore file)
+(env.ts is already on the .gitignore file)
 
 ![Application Settings](images/image-1.jpeg)
 
-#./config/env.js 
+#./config/env.ts 
 ```
-const ENV = {
+const Env = {
   dev: {
     apiUrl: localhost,
     auth0ClientId: '*****',
@@ -35,7 +35,7 @@ const ENV = {
   }
 };
 
-export default ENV;
+export default Env;
 ```
 
 ________________________

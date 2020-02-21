@@ -6,5 +6,4 @@ npm-debug.*
 *.p12
 *.key
 *.mobileprovision
-secrets.js
 env.js

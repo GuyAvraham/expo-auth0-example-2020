@@ -12,7 +12,7 @@ function Entrance(props) {
         style={styles.image}
       ></Image>
       <MaterialButtonDark
-        text1={translated("Enter")}
+        text1={translated(props.label)}
         style={styles.materialButtonDark}
         onPress={() => {
           console.log("click");
