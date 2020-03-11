@@ -7,7 +7,7 @@ import MaterialButtonViolet from "./MaterialButtonViolet";
 
 const BrowserModal = props => {
   const _handlePress = async () => {
-    const result = await WebBrowser.openBrowserAsync(props.href);
+    const result = await WebBrowser.openAuthSessionAsync(props.href);
     console.log('BrowserModal result ', result);
     props.onPress && props.onPress();
   };
