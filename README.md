@@ -1,3 +1,16 @@
+- Updated with Expo 37.
+- With examples of Auth0 login and fetching data.
+- React-Navigation 5 stack with Header, and drawer.
+- Using Expo features: 
+  - Interesting mainAppState reducer soulution. 
+  - Localization i18n.
+  - Expo Fonts. 
+  - Splash screen.
+  - Examples of deep linking to external apps.
+  - You can find example of how to deep link to your app here:  
+  - Expo WebView.
+  - Expo Web in-app-modal with cookies share.
+
 # auth0-example
 Credits to https://github.com/expo/auth0-example for creating the original repo two years ago. It is currently not maintained and cannot be upgraded to new Expo versions.
 
