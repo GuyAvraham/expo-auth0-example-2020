@@ -2,12 +2,11 @@ const ENV = {
   dev: {
     apiUrl: "localhost",
     auth0: {
-      auth0Domain: "auth.romach-dev.com",
+      auth0Domain: "",
       passwordlessClient: {
-        client_id: "ZaaH4jbBvP85SUUyMjomo8pR8hPLSfUi",
-        allowedConnections: ["sms"],
+        client_id: "",
         scope: "openid profile read:current_user update:current_user_identities",
-        audience: `https://dev-b6oppzho.eu.auth0.com/api/v2/`
+        audience: `https://XXXX.auth0.com/api/v2/`
       },
     }
   },
