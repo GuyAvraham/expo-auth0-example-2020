@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
 import { translated } from "../../Utils/Localization";
 

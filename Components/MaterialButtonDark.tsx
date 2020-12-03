@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { StyleSheet} from "react-native";
 import ButtonSpinner from 'react-native-button-spinner';
 import KBTitle from "./KBTitle";

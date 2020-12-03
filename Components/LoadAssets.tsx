@@ -31,14 +31,6 @@ function LoadAssets(props) {
       try {
         await cacheAssetsAsync({
           images: [
-            require("../assets/images/logo-large.png"),
-            require("../assets/images/user.png"),
-            require("../assets/back-blur-3.mp4"),
-            require("../assets/kb-icon.png"),
-            require("../assets/hamburger.png"),
-            require("../assets/navPage/flag-blue.png"),
-            require("../assets/navPage/flag-pink.png"),
-            require("../assets/navPage/waze.png"),
           ],
           fonts: [
             FontAwesome.font,

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { useWindowDimensions, Image } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
 

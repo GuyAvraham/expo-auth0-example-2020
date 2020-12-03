@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { StyleSheet, Dimensions, Image } from "react-native";
 import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 
@@ -24,8 +24,6 @@ function CustomMap() {
     >
       <Marker
         coordinate={region}
-        title="KB-PURE"
-        description="KB-PURE"
       >
         <Image
           source={BlueFlagImg}

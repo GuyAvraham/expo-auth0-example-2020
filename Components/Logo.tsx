@@ -1,5 +1,5 @@
 import { Image, StyleSheet, TouchableOpacity, Dimensions } from "react-native";
-import React from "react";
+import * as React from "react";
 
 const Logo = props => (
   <TouchableOpacity style={props.style} onPress={props.onPress}>

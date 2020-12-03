@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { I18nManager } from 'react-native';
 
 import AppNavigationStack from "./Components/navigation/AppNavigationStack";

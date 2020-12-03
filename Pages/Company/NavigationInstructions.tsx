@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { View, StyleSheet } from "react-native";
 import KBTitle from "../../Components/KBTitle";
 import { translated } from "../../Utils/Localization";

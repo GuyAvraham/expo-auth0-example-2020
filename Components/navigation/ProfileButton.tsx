@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React from "react";
+import * as React from "react";
 import { Image, StyleSheet, TouchableOpacity } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
 

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Linking } from "expo";
 import { View, StyleSheet, TouchableOpacity, ScrollView } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
@@ -26,17 +26,15 @@ function About() {
           <Ionicons
             name="logo-facebook"
             size={RFPercentage(7)}
-            onPress={() =>
-              Linking.openURL("https://urlgeni.us/facebook/kb-pure")
-            }
+            // onPress={() =>
+            // }
           />
           <KBText style={styles.delimiter}>|</KBText>
           <Ionicons
             name="logo-instagram"
             size={RFPercentage(7)}
-            onPress={() =>
-              Linking.openURL("https://urlgeni.us/instagram/kb-pure-insta")
-            }
+            // onPress={() =>
+            // }
           />
         </View>
         <TouchableOpacity

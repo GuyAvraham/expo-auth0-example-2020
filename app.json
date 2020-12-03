@@ -9,9 +9,8 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/kb-icon.png",
     "splash": {
-      "image": "./assets/splash/splash-gradient.png",
+      "image": "./assets/splash/splash.png",
       "resizeMode": "cover"
     },
     "updates": {
@@ -28,7 +27,7 @@
         ]
       }
     },
-    "scheme": "kbp",
+    "scheme": "app.scheme.for.example",
     "description": ""
   }
 }

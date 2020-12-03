@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
 import { useStateValue } from "../Utils/State";
 import Background from "../Components/Background";
