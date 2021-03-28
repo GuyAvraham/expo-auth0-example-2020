@@ -1,9 +1,11 @@
 // import * as Localization from "expo-localization";
 import i18n from "i18n-js";
 
+// todo: use i18n-ts instead
+
 i18n.translations = {
   en: {
-    EnterPhone: "Enter PhoneNumber",
+    EnterPhone: "Universal web login",
     EnterFB: "Enter Facebook",
     Welcome: "Welcome back",
     Logout: "Logout",
@@ -60,7 +62,6 @@ i18n.translations = {
 
 // Set the locale once at the beginning of your app.
 // i18n.locale = Localization.locale;
-// i18n.locale = "he"; // this is how u change lenguage
 i18n.fallbacks = true;
 
 export function translated(t) {

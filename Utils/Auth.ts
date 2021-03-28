@@ -32,7 +32,7 @@ const login = async settings => {
 
   // Structure the auth parameters and URL
   const params = {
-    client_id: settings.auth0ClientId,
+    client_id: settings.client_id,
     redirect_uri: redirectUrl,
     // response_type:
     // id_token will return a JWT token with the profile as described on the scope
